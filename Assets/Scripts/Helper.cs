@@ -2,19 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class Helper
+public class Helper : MonoBehaviour
 {
-    public static GameObject createCube(float x, float y, float z)
+    public static GameObject createCube(Vector3 vetorPos, Vector3 vetorScale)
     {
         // Criando um objeto do tipo cubo
         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        // Criando um vetor de posição para ser atribuiido ao cubo posteriormente
-        Vector3 posicao = new Vector3(x, y, z);
-        Vector3 escala = new Vector3(x, y, z);
-        // Atribuindo uma posição ao cubo criado
-        cube.transform.position = posicao;
-        cube.transform.localScale = escala;
-        
+        // Atribuindo uma posição e uma escala ao cubo criado
+        cube.transform.position = vetorPos;
+        cube.transform.localScale = vetorScale;
 
         return cube;
     }
