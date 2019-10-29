@@ -64,7 +64,6 @@
   <ItemGroup>
     <Compile Include="Assets\scrip.cs" />
     <Compile Include="Assets\Scripts\Helper.cs" />
-    <Compile Include="Assets\Scripts\HelperLerp.cs" />
     <Compile Include="Assets\Scripts\Plataforma.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Camero/Documents/Faculdade/8º Semestre/Computacao Grafica/CutRedHunter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

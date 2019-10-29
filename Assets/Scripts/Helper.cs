@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Helper : MonoBehaviour
 {
-    public static GameObject createCube(Vector3 vetorPos, Vector3 vetorScale)
+    public static GameObject createPiso()
     {
         // Criando um objeto do tipo cubo
         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        // Atribuindo uma posição e uma escala ao cubo criado
-        cube.transform.position = vetorPos;
-        cube.transform.localScale = vetorScale;
+        // Atribuindo uma escala para o cubo
+        cube.transform.localScale = new Vector3(1, 0.2f, 1);
 
         return cube;
     }
