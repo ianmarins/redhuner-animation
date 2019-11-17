@@ -304,6 +304,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1496981820}
   - component: {fileID: 1496981819}
+  - component: {fileID: 1496981821}
+  - component: {fileID: 1496981822}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -338,3 +340,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1496981821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496981818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16da0abab65aa3046ad24d52591abf63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeStartedLerping: 5
+  red: {fileID: 2100000, guid: ea23be229450d7340be06a94625ac6da, type: 2}
+  yellow: {fileID: 2100000, guid: 01c508fac81972d4f9a22618f325b15b, type: 2}
+--- !u!114 &1496981822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496981818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdb545167ae4e4479489ce77112492c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeStartedLerping: 0
+  red: {fileID: 2100000, guid: ea23be229450d7340be06a94625ac6da, type: 2}
+  yellow: {fileID: 2100000, guid: 01c508fac81972d4f9a22618f325b15b, type: 2}
