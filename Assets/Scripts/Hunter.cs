@@ -46,6 +46,7 @@ public class Hunter : MonoBehaviour
 
     public float timeStartedLerping;
 
+    // Função para o "start" da contagem do tempo
     private void startLerping()
     {
         timeStartedLerping = Time.time;
@@ -59,8 +60,8 @@ public class Hunter : MonoBehaviour
         // Instanciando informações do controle
         control = Helper.createLetraColor(yellow);
         velocidadeControl = 10;
-        beginPositionControl = new Vector3(-1, 0, -11);
-        endPositionControl = new Vector3(-1, 0, -10);
+        beginPositionControl = new Vector3(-1, 0, -54);
+        endPositionControl = new Vector3(-1, 0, -50);
 
         // Instanciando os cubos letra H - Total de 28 cubos
         letraH = new List<GameObject>();
@@ -99,45 +100,45 @@ public class Hunter : MonoBehaviour
             letraR.Add(Helper.createLetraColor(red));
         }
 
-        // Instanciando a velocidade da letra H - Intervalo entre 10 e 25
+        // Instanciando a velocidade da letra H - Intervalo entre 15 e 45
         velocidadeH = new List<int>();
         for (int i = 0; i <= 27; i++)
         {
-            velocidadeH.Add(Random.Range(10, 25));
+            velocidadeH.Add(Random.Range(15, 45));
         }
-        // Instanciando a velocidade da letra U - Intervalo entre 10 e 25
+        // Instanciando a velocidade da letra U - Intervalo entre 15 e 45
         velocidadeU = new List<int>();
         for (int i = 0; i <= 17; i++)
         {
-            velocidadeU.Add(Random.Range(10, 25));
+            velocidadeU.Add(Random.Range(15, 45));
         }
 
-        // Instanciando a velocidade da letra N - Intervalo entre 10 e 25
+        // Instanciando a velocidade da letra N - Intervalo entre 15 e 45
         velocidadeN = new List<int>();
         for (int i = 0; i <= 27; i++)
         {
-            velocidadeN.Add(Random.Range(10, 25));
+            velocidadeN.Add(Random.Range(15, 45));
         }
 
-        // Instanciando a velocidade da letra T - Intervalo entre 10 e 25
+        // Instanciando a velocidade da letra T - Intervalo entre 15 e 45
         velocidadeT = new List<int>();
         for (int i = 0; i <= 17; i++)
         {
-            velocidadeT.Add(Random.Range(10, 25));
+            velocidadeT.Add(Random.Range(15, 45));
         }
 
-        // Instanciando a velocidade da letra E - Intervalo entre 10 e 25
+        // Instanciando a velocidade da letra E - Intervalo entre 15 e 45
         velocidadeE = new List<int>();
         for (int i = 0; i <= 22; i++)
         {
-            velocidadeE.Add(Random.Range(10, 25));
+            velocidadeE.Add(Random.Range(15, 45));
         }
 
-        // Instanciando a velocidade da letra R - Intervalo entre 10 e 25
+        // Instanciando a velocidade da letra R - Intervalo entre 15 e 45
         velocidadeR = new List<int>();
         for (int i = 0; i <= 23; i++)
         {
-            velocidadeR.Add(Random.Range(10, 25));
+            velocidadeR.Add(Random.Range(15, 45));
         }
 
         // Inicializando o vetor origem da letra H - Coordenada (-36, 0, 26)
@@ -172,6 +173,7 @@ public class Hunter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Nesta área do código são chamadas as composições de movimentos de cada cubo, através do lerping.
         // Learping control
         control.transform.position = Lerp(beginPositionControl, endPositionControl, timeStartedLerping, velocidadeControl);
 
@@ -213,6 +215,7 @@ public class Hunter : MonoBehaviour
 
     }
 
+    // Função Lerp, que faz a translação dos cubos com base no tempo.
     public Vector3 Lerp(Vector3 start, Vector3 end, float timeStartedLerping, float lerpTime)
     {
         float timeSinceStarted = Time.time - timeStartedLerping;

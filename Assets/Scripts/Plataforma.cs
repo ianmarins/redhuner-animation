@@ -41,6 +41,7 @@ public class Plataforma : MonoBehaviour
 
     public float timeStartedLerping;
 
+    // Função para o "start" da contagem do tempo
     private void startLerping()
     {
         timeStartedLerping = Time.time;
@@ -197,7 +198,8 @@ public class Plataforma : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for(int i = 0; i <=524; i++)
+        // Nesta área do código são chamadas as composições de movimentos de cada cubo, através do lerping.
+        for (int i = 0; i <=524; i++)
         {
             pisoPlat1[i].transform.position = Lerp(beginPositionPlat1, endPositionPlat1[i], timeStartedLerping, velocidadePlat1[i]);
         }
@@ -228,6 +230,7 @@ public class Plataforma : MonoBehaviour
         }
     }
 
+    // Função Lerp, que faz a translação dos cubos com base no tempo.
     public Vector3 Lerp(Vector3 start, Vector3 end, float timeStartedLerping, float lerpTime)
     {
         float timeSinceStarted = Time.time - timeStartedLerping;

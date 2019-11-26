@@ -31,6 +31,7 @@ public class Red : MonoBehaviour
 
     public float timeStartedLerping;
 
+    // Função para o "start" da contagem do tempo
     private void startLerping()
     {
         timeStartedLerping = Time.time;
@@ -44,8 +45,8 @@ public class Red : MonoBehaviour
         // Instanciando informações do controle
         control = Helper.createLetraColor(yellow);
         velocidadeControl = 10;
-        beginPositionControl = new Vector3(0, 0, -11);
-        endPositionControl = new Vector3(0, 0, -10);
+        beginPositionControl = new Vector3(0, 0, -54);
+        endPositionControl = new Vector3(0, 0, -50);
 
         // Instanciando os cubos letra R - Total de 24 cubos
         letraR = new List<GameObject>();
@@ -105,6 +106,7 @@ public class Red : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Nesta área do código são chamadas as composições de movimentos de cada cubo, através do lerping.
         // Learping control
         control.transform.position = Lerp(beginPositionControl, endPositionControl, timeStartedLerping, velocidadeControl);
 
@@ -127,6 +129,7 @@ public class Red : MonoBehaviour
         }
     }
 
+    // Função Lerp, que faz a translação dos cubos com base no tempo.
     public Vector3 Lerp(Vector3 start, Vector3 end, float timeStartedLerping, float lerpTime)
     {
         float timeSinceStarted = Time.time - timeStartedLerping;

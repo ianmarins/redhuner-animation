@@ -70,6 +70,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Camero/Documents/Faculdade/8º Semestre/Computacao Grafica/CutRedHunter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/Camero/Documents/Faculdade/8º Semestre/Computacao Grafica/CutRedHunter/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/Camero/Documents/Faculdade/8º Semestre/Computacao Grafica/CutRedHunter/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -87,6 +90,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/Camero/Documents/Faculdade/8º Semestre/Computacao Grafica/CutRedHunter/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/Camero/Documents/Faculdade/8º Semestre/Computacao Grafica/CutRedHunter/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Camero/Documents/Faculdade/8º Semestre/Computacao Grafica/CutRedHunter/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
